@@ -1,0 +1,84 @@
+.swiper {
+  width: 100%;
+  height: 40%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: flex;
+  width: 15rem;
+  height: 15rem;
+
+  right: -10rem;
+  object-fit: cover;
+  padding-bottom: 2rem;
+}
+
+.hed1 {
+  margin-top: 4rem;
+}
+.section-testi {
+  margin-top: 8rem;
+  padding: 10rem 0;
+  background: linear-gradient(45deg, #23a6d5, #e73c7e, #23d5ab, #ee7752);
+  background-size: cover;
+  transform: skewX(-7deg);
+  & > * {
+    // transform: skewY(7deg);
+  }
+
+  //
+}
+
+.testimonial {
+  //
+}
+.testo {
+  background-color: rgba($color-white, 0.9);
+  height: 35rem;
+  width: 43rem;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  // transition: transform 0.3s;
+  overflow: hidden;
+  &__icon {
+    left: 10.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &__name {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    text-align: center;
+
+    font-size: 1.4rem;
+    bottom: -2rem;
+  }
+  &__text {
+    font-size: 1.7rem;
+    float: left;
+    padding: 0rem 0rem 0rem 1rem;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+  }
+}
